@@ -5,4 +5,7 @@ This folder contains different algorithm questions grouped by the main data stru
 The List should be as follows:
 
 -Array
+
 -List
+--------------
+-LinkedList
