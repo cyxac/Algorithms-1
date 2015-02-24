@@ -7,33 +7,43 @@ Warning
 Because this project has completed function for email sending out. Double-check before any launch.
 - renewal-mailer/grails-app/services/ProductRenewalService.groovy  method: sendSES()
 - renewal-mailer/grails-app/conf/Config.groovy set renewal.recipient.overrideEmailAaddress and renewal.source.overrideEmailAddress
-- 
 
 Main UI
 ---------
 1. Initiate project: THESE URLs ARE FOR DEVELOPERS ONLY
 In local/stage test, to send out a large number of real emails to test is not realistic, to test the functions in this project initiate methods will generate a bunch of fake data.
 
-http://localhost:8080/init/productInit
+(1). http://localhost:8080/init/productInit
 - create all products and sample template for each product, save to mongoDB, you can see results in product page if success.
-http://localhost:8080/init/productDrop
+
+(2). http://localhost:8080/init/productDrop
 - delete all products and their templates, be careful...
-http://localhost:8080/init/templateDrop
+
+(3). http://localhost:8080/init/templateDrop
 - delete all templates, be careful...
-http://localhost:8080/init/emailInitByDay
+
+(4). http://localhost:8080/init/emailInitByDay
 - randomly generate fate email records for each product for the last 15 days. 
-http://localhost:8080/init/emailDropByDay
+
+(5). http://localhost:8080/init/emailDropByDay
 - delete all emails, very careful about this, never use it in production.
 
 
 API usage (please refer to "renewal-mailer/grails-app/conf/UrlMappings")
 ---------
 1. product APIs
+http://renewals.dc.thestreet.com/api/products
+http://renewals.dc.thestreet.com/api/products/54dd05a0e4b0314da99b8916  (with id)
 
 2. template APIs
-3. stats APIs
-4. notices APIs
+http://renewals.dc.thestreet.com/api/templates
+http://renewals.dc.thestreet.com/api/templates/54dd05a0e4b0314da99b8917
 
+3. stats APIs
+ 
+
+4. notices APIs
+http://renewals.dc.thestreet.com/api/notices/findNotice?noticeId=51640693
 
 
 Test Trigger
