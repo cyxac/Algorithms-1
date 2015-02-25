@@ -41,7 +41,7 @@ http://renewals.dc.thestreet.com/api/products/54dd05a0e4b0314da99b8916  (with id
 http://renewals.dc.thestreet.com/api/templates
 http://renewals.dc.thestreet.com/api/templates/54dd05a0e4b0314da99b8917
 
-3. stats APIs
+3.  stats APIs
 
 (1). http://renewals.dc.thestreet.com/api/stats/getProductCodes
 - get all active products name and code pairs
