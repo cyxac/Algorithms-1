@@ -32,14 +32,17 @@ In local/stage test, to send out a large number of real emails to test is not re
 API usage (please refer to "renewal-mailer/grails-app/conf/UrlMappings")
 ---------
 1. product APIs
+
 http://renewals.dc.thestreet.com/api/products
 http://renewals.dc.thestreet.com/api/products/54dd05a0e4b0314da99b8916  (with id)
 
 2. template APIs
+
 http://renewals.dc.thestreet.com/api/templates
 http://renewals.dc.thestreet.com/api/templates/54dd05a0e4b0314da99b8917
 
 3. stats APIs
+
 (1). http://renewals.dc.thestreet.com/api/stats/getProductCodes
 - get all active products name and code pairs
 
