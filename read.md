@@ -40,24 +40,24 @@ http://renewals.dc.thestreet.com/api/templates
 http://renewals.dc.thestreet.com/api/templates/54dd05a0e4b0314da99b8917
 
 3. stats APIs
-http://renewals.dc.thestreet.com/api/stats/getProductCodes
+(1). http://renewals.dc.thestreet.com/api/stats/getProductCodes
 - get all active products name and code pairs
 
-http://renewals.dc.thestreet.com/api/stats/getAllProductCodes
+(2). http://renewals.dc.thestreet.com/api/stats/getAllProductCodes
 - get all products name and code pairs
 
-http://renewals.dc.thestreet.com/api/stats/getStatsByDate?product=SB-9&start=02112015&end=02132015
+(3). http://renewals.dc.thestreet.com/api/stats/getStatsByDate?product=SB-9&start=02112015&end=02132015
 - product cannot be null, must be at least one product code
 - start and end are both optional, format is MMDDYYYY, if start is null, choose 10 days before end, if end is null, choose 10 days after start, if both are null, choose most recent 10 days.
 - IMPORTANT: http://renewals.dc.thestreet.com/api/stats/getStatsByDate2?product=SB-9&start=02112015&end=02132015, the only difference is return JSON will product code as key.
 
 
-http://renewals.dc.thestreet.com/api/stats/getMailingDetails?productName=TheStreet.com%20Options%20Profits&productScope=Sent&productDate=2015/02/09
+(4). http://renewals.dc.thestreet.com/api/stats/getMailingDetails?productName=TheStreet.com%20Options%20Profits&productScope=Sent&productDate=2015/02/09
 - productName cannot be null.
 - productScope can be "Sent" or other work or null, only "Sent" represents successful sent emails
 - productDate is formated as YYYY/MM/DD
 
-http://localhost:8080/api/stats/searchEmails?terms=mike&productCode=%20All&startIndex=0&itemsPerPage=10
+(5). http://localhost:8080/api/stats/searchEmails?terms=mike&productCode=%20All&startIndex=0&itemsPerPage=10
 - simple search to get email details back
 - terms are the key words, example: mike%20gorback -> search both results contains both mike and gorback
 - product Code is not necessary, will search all if code is null
